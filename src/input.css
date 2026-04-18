@@ -1,0 +1,195 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Hanuman', ui-serif, serif;
+  --color-foreground: #030c01;
+  --color-barberry: #e8e81c;
+  --color-harlequin: #42ed13;
+  --color-harlequin-light: #7af259;
+  --color-harlequin-lighter: #d9fbcf;
+  --color-surface: #ffffff;
+  --color-muted: #f5f5f5;
+  --color-footer: #eeee60;
+  --color-border-subtle: rgb(3 12 1 / 15%);
+  --color-hero-overlay-strong: rgb(255 255 255 / 58%);
+  --color-hero-overlay-soft: rgb(255 255 255 / 18%);
+  --color-scrim: rgb(15 23 32 / 45%);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/*
+  Повторювані блоки через @apply (це все ще Tailwind).
+  Уникнення конфлікту з вбудованим `.container` — класи layout-container*.
+*/
+@layer components {
+  /* Явний порядок min-width: інакше md: може йти після 1440px у згенерованому CSS */
+  .layout-container {
+    @apply mx-auto w-full max-w-[1440px] px-5;
+  }
+
+  @media (min-width: 768px) {
+    .layout-container {
+      @apply px-8;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .layout-container {
+      @apply px-16;
+    }
+  }
+
+  .layout-container-header {
+    @apply mx-auto w-full max-w-[1440px] pl-5 pr-1.5 md:px-8;
+  }
+
+  @media (min-width: 1440px) {
+    .layout-container-header {
+      @apply px-20;
+    }
+  }
+
+  /** Каруселі bestsellers / testimonials: ширина слайда через cqi. */
+  #bestsellers [data-carousel-viewport],
+  #testimonials [data-carousel-viewport] {
+    container-type: inline-size;
+  }
+
+  .section-spacing {
+    @apply py-16 md:py-16 lg:py-[92px];
+  }
+
+  .footer-spacing {
+    @apply py-12 md:py-12 lg:py-20;
+  }
+
+  .btn-primary {
+    @apply inline-flex cursor-pointer items-center justify-center rounded-full border-0 bg-[linear-gradient(140deg,var(--color-barberry),var(--color-harlequin))] text-base font-medium text-foreground no-underline transition-opacity hover:opacity-50 focus:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-barberry;
+  }
+
+  .btn-primary-sm {
+    @apply px-5 py-2;
+  }
+
+  .btn-primary-md {
+    @apply px-6 py-2.5;
+  }
+
+  .display-xxl {
+    @apply font-serif text-[2.25rem] font-normal leading-[1.2] tracking-[-0.36px] lg:text-[3.5rem] lg:tracking-[-0.56px];
+  }
+
+  .display-xl {
+    @apply font-serif text-[2.125rem] font-normal leading-[1.2] tracking-[-0.34px] md:text-[2.125rem] md:tracking-[-0.34px] lg:text-[3rem] lg:tracking-[-0.48px];
+  }
+
+  .nav-link {
+    @apply text-foreground no-underline transition-opacity hover:opacity-60 focus:opacity-60;
+  }
+
+  .hero-overlay {
+    @apply pointer-events-none absolute inset-0 z-1 bg-[linear-gradient(90deg,var(--color-hero-overlay-strong),var(--color-hero-overlay-soft)_53%,transparent)];
+  }
+
+  /* Mobile-first + Retina pattern for CSS background-image. */
+  .retina-bg-responsive {
+    background-image: url("../images/hero-image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .retina-bg-responsive {
+      background-image: url("../images/hero-image.jpg");
+    }
+  }
+
+  @media (min-width: 768px) {
+    .retina-bg-responsive {
+      background-image: url("../images/about.jpg");
+    }
+  }
+
+  @media (min-width: 768px) and (min-resolution: 2dppx),
+    (min-width: 768px) and (min-resolution: 192dpi) {
+    .retina-bg-responsive {
+      background-image: url("../images/about.jpg");
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .retina-bg-responsive {
+      background-image: url("../images/shop.jpg");
+    }
+  }
+
+  @media (min-width: 1024px) and (min-resolution: 2dppx),
+    (min-width: 1024px) and (min-resolution: 192dpi) {
+    .retina-bg-responsive {
+      background-image: url("../images/shop.jpg");
+    }
+  }
+
+  /* flora-testimonial */
+  .testimonial-card {
+    @apply flex min-h-0 flex-col gap-6 rounded-2xl border border-border-subtle p-6 md:min-h-[228px] md:justify-between md:gap-0 md:p-8 lg:min-h-60;
+  }
+
+  .testimonial-card__quote {
+    @apply m-0 text-lg leading-normal;
+  }
+
+  .testimonial-card__author {
+    @apply mt-auto text-base font-semibold leading-normal;
+  }
+
+  /* flora-contact-line */
+  .contact-line {
+    @apply flex items-start gap-4;
+  }
+
+  .contact-line__icon {
+    @apply size-6 shrink-0;
+  }
+
+  .contact-line__text {
+    @apply flex flex-col gap-2;
+  }
+
+  .contact-line__label {
+    @apply m-0 font-serif text-lg leading-[1.4] tracking-[-0.18px];
+  }
+
+  .contact-line__link {
+    @apply m-0 text-base leading-normal underline;
+  }
+
+  .contact-line__plain {
+    @apply m-0 text-base leading-normal;
+  }
+
+  /* Заголовок секції з підзаголовком (один раз на сторінці) */
+  .section-intro {
+    @apply mx-auto mb-10 flex w-full max-w-[768px] flex-col items-center gap-2 text-center md:mb-10 lg:mb-8;
+  }
+
+  .section-intro .display-xl {
+    @apply m-0;
+  }
+
+  .section-intro .section-lead {
+    @apply m-0 max-w-2xl text-lg leading-normal;
+  }
+}

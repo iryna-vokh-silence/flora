@@ -1,0 +1,19 @@
+{
+  "name": "flora",
+  "version": "1.0.0",
+  "description": "Flora landing page",
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./css/styles.css --minify",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "modern-normalize": "^3.0.1",
+    "prettier": "^3.8.3",
+    "tailwindcss": "^4.2.2"
+  }
+}
