@@ -73,8 +73,9 @@
   <main>
     <section class="bg-muted">
       <div class="relative mx-auto flex max-w-[1440px] flex-col overflow-hidden max-md:h-[510px] md:block md:h-[669px]">
-        <img src="./images/hero-image.jpg" srcset="./images/hero-image.jpg 1x, ./images/hero-image.jpg 2x" sizes="100vw"
-          alt="Bouquet in hero section" width="1440" height="669"
+        <img src="./images/hero-image.jpg" fetchpriority=high
+          srcset="./images/hero-image.jpg 1x, ./images/hero-image.jpg 2x" sizes="100vw" alt="Bouquet in hero section"
+          width="1440" height="669"
           class="aspect-1440/669 h-auto w-full object-cover max-md:absolute max-md:inset-0 max-md:aspect-auto max-md:h-full max-md:min-h-[510px] md:absolute md:inset-0 md:aspect-auto md:h-full md:w-full" />
         <div class="hero-overlay" aria-hidden="true"></div>
         <div
@@ -110,7 +111,7 @@
               freshest blooms to create stunning pieces for every occasion.
             </p>
           </div>
-          <img src="./images/about.jpg" srcset="./images/about.jpg 1x, ./images/about.jpg 2x"
+          <img src="./images/about.jpg" fetchpriority=high srcset="./images/about.jpg 1x, ./images/about.jpg 2x"
             sizes="(min-width: 768px) 50vw, 100vw" alt="Florist arranging white peony flowers" width="600"
             class="h-[428px] w-full rounded-2xl object-cover" />
         </div>
@@ -328,8 +329,8 @@
               copy="456 Floral Ave, Sydney NSW 2000 AU"></flora-contact-line>
           </div>
         </div>
-        <img src="./images/shop.jpg" srcset="./images/shop.jpg 1x, ./images/shop.jpg 2x" sizes="100vw"
-          alt="Florist holding bouquet in flower shop" width="1280"
+        <img src="./images/shop.jpg" fetchpriority=high srcset="./images/shop.jpg 1x, ./images/shop.jpg 2x"
+          sizes="100vw" alt="Florist holding bouquet in flower shop" width="1280"
           class="aspect-1312/738 w-full rounded-2xl object-cover md:aspect-1312/738 md:h-auto lg:aspect-auto lg:h-[720px]" />
       </div>
     </section>
@@ -374,7 +375,7 @@
 
   <template id="flora-product-card">
     <div class="flex min-w-0 flex-col gap-4">
-      <img loading="lazy" />
+      <img loading="lazy" fetchpriority=high />
       <div class="product-card__body">
         <h3 class="text-lg font-semibold leading-normal"></h3>
         <p class="text-sm leading-normal"></p>
