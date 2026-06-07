@@ -4,14 +4,21 @@
   "description": "Flora landing page",
   "scripts": {
     "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./css/styles.css --minify",
-    "format": "prettier --write \"**/*.{html,css,js,json,md}\""
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "server": "json-server db.json --port 3001",
+    "server:watch": "json-server --watch db.json --port 3001"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "simplelightbox": "^2.14.3"
+  },
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.2",
+    "json-server": "^0.17.4",
     "modern-normalize": "^3.0.1",
     "prettier": "^3.8.3",
     "tailwindcss": "^4.2.2"

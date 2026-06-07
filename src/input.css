@@ -1,5 +1,6 @@
-@import "modern-normalize";
-@import "tailwindcss";
+@import 'modern-normalize';
+@import 'tailwindcss';
+@import './retina-backgrounds.css';
 
 @theme {
   --container-sm: 375px;
@@ -16,8 +17,8 @@
   --breakpoint-md: 48rem; /* 768px */
   --breakpoint-lg: 90rem; /* 1440px */
 
-  --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Hanuman", ui-serif, serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Hanuman', ui-serif, serif;
   --color-foreground: #030c01;
   --color-barberry: #e8e81c;
   --color-harlequin: #42ed13;

@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Flora - handcrafted bouquets and floral delivery"
-    />
+    <meta name="description" content="Flora - handcrafted bouquets and floral delivery" />
     <title>Flora</title>
     <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,9 +16,7 @@
   </head>
   <body class="overflow-x-hidden bg-surface font-sans text-foreground">
     <header class="sticky top-0 z-50 bg-surface">
-      <div
-        class="mx-auto w-full sm:w-sm md:w-md lg:w-lg pl-5 pr-1.5 md:px-8 lg:px-20"
-      >
+      <div class="mx-auto w-full sm:w-sm md:w-md lg:w-lg pl-5 pr-1.5 md:px-8 lg:px-20">
         <div
           class="relative flex min-h-[72px] items-center justify-between gap-3 md:gap-4"
         >
@@ -54,12 +49,7 @@
               aria-expanded="false"
               aria-controls="mobile-menu"
             >
-              <svg
-                width="24"
-                height="24"
-                aria-hidden="true"
-                class="text-foreground"
-              >
+              <svg width="24" height="24" aria-hidden="true" class="text-foreground">
                 <use href="./assets/icons.svg#menu"></use>
               </svg>
             </button>
@@ -88,12 +78,7 @@
             data-menu-close
             aria-label="Close menu"
           >
-            <svg
-              width="24"
-              height="24"
-              aria-hidden="true"
-              class="text-foreground"
-            >
+            <svg width="24" height="24" aria-hidden="true" class="text-foreground">
               <use href="./assets/icons.svg#x"></use>
             </svg>
           </button>
@@ -125,16 +110,11 @@
         <div
           class="relative mx-auto flex w-full sm:w-sm md:w-md lg:w-lg flex-col overflow-hidden max-md:h-[510px] md:block md:h-[669px]"
         >
-          <img
-            src="./images/hero-image.jpg"
-            srcset="./images/hero-image.jpg 1x, ./images/hero-image.jpg 2x"
-            sizes="100vw"
-            fetchpriority="high"
-            alt="Bouquet in hero section"
-            width="1440"
-            height="669"
-            class="aspect-1440/669 h-auto w-full object-cover max-md:absolute max-md:inset-0 max-md:aspect-auto max-md:h-full max-md:min-h-[510px] md:absolute md:inset-0 md:aspect-auto md:h-full md:w-full"
-          />
+          <div
+            class="hero aspect-1440/669 h-auto w-full max-md:absolute max-md:inset-0 max-md:aspect-auto max-md:h-full max-md:min-h-[510px] md:absolute md:inset-0 md:aspect-auto md:h-full md:w-full"
+            role="img"
+            aria-label="Bouquet in hero section"
+          ></div>
           <div
             class="pointer-events-none absolute inset-0 z-1 bg-[linear-gradient(90deg,var(--color-hero-overlay-strong),var(--color-hero-overlay-soft)_53%,transparent)]"
             aria-hidden="true"
@@ -151,12 +131,10 @@
                 Brighten Your Day with Our Stunning Bouquets
               </h1>
               <div class="flex w-full max-w-[667px] flex-col gap-8">
-                <p
-                  class="m-0 max-w-[247px] text-lg leading-normal md:max-w-[667px]"
-                >
-                  At Flora, we believe that every occasion deserves a beautiful
-                  bouquet. Our expertly crafted arrangements are designed to
-                  bring joy and elegance to your celebrations.
+                <p class="m-0 max-w-[247px] text-lg leading-normal md:max-w-[667px]">
+                  At Flora, we believe that every occasion deserves a beautiful bouquet.
+                  Our expertly crafted arrangements are designed to bring joy and elegance
+                  to your celebrations.
                 </p>
                 <a
                   href="#bestsellers"
@@ -170,19 +148,12 @@
       </section>
 
       <section id="about" class="bg-surface py-16 md:py-16 lg:py-section-lg">
-        <div
-          class="mx-auto w-full sm:w-sm md:w-md lg:w-lg px-5 md:px-8 lg:px-16"
-        >
+        <div class="mx-auto w-full sm:w-sm md:w-md lg:w-lg px-5 md:px-8 lg:px-16">
           <div
             class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-6 lg:gap-20"
           >
             <div class="flex flex-col gap-6">
-              <svg
-                width="96"
-                height="85"
-                class="text-foreground"
-                aria-hidden="true"
-              >
+              <svg width="96" height="85" class="text-foreground" aria-hidden="true">
                 <use href="./assets/icons.svg#flower"></use>
               </svg>
               <h2
@@ -192,14 +163,13 @@
               </h2>
               <p class="text-lg leading-normal">
                 At Flora, we believe that every bouquet tells a story. Our team
-                meticulously crafts each arrangement, blending creativity with
-                the freshest blooms to create stunning pieces for every
-                occasion.
+                meticulously crafts each arrangement, blending creativity with the
+                freshest blooms to create stunning pieces for every occasion.
               </p>
             </div>
             <img
-              src="./images/about.jpg"
-              srcset="./images/about.jpg 1x, ./images/about.jpg 2x"
+              src="./images/about@1x.jpg"
+              srcset="./images/about@2x.jpg 2x"
               sizes="(min-width: 768px) 50vw, 100vw"
               alt="Florist arranging white peony flowers"
               width="600"
@@ -209,13 +179,8 @@
         </div>
       </section>
 
-      <section
-        id="bestsellers"
-        class="bg-surface py-16 md:py-16 lg:py-section-lg"
-      >
-        <div
-          class="mx-auto w-full sm:w-sm md:w-md lg:w-lg px-5 md:px-8 lg:px-16"
-        >
+      <section id="bestsellers" class="bg-surface py-16 md:py-16 lg:py-section-lg">
+        <div class="mx-auto w-full sm:w-sm md:w-md lg:w-lg px-5 md:px-8 lg:px-16">
           <h2
             class="mb-6 font-serif text-[2rem] font-normal leading-[1.2] tracking-[-0.32px] md:mb-8 md:text-[2.125rem] md:tracking-[-0.34px] lg:text-[3rem] lg:tracking-[-0.48px]"
           >
@@ -234,6 +199,7 @@
                     variant="featured"
                     name="Spring Elegance"
                     description="A delicate blend of peonies, tulips, and roses - perfect for springtime gifting and bright smiles."
+                    details="Each stem is carefully selected to create a bouquet that radiates freshness, elegance, and the gentle charm of spring. Whether you're celebrating a birthday, sending love, or simply brightening someone's day, this arrangement is sure to bring warm smiles and lasting impressions."
                     price="$35"
                     src="./images/bouquet-9.jpg"
                     alt="Spring Elegance bouquet"
@@ -344,10 +310,12 @@
         </div>
       </section>
 
-      <section id="products" class="bg-surface py-16 md:py-16 lg:py-section-lg">
-        <div
-          class="mx-auto w-full sm:w-sm md:w-md lg:w-lg px-5 md:px-8 lg:px-16"
-        >
+      <section
+        id="products"
+        class="bg-surface py-16 md:py-16 lg:py-section-lg"
+        data-products-section
+      >
+        <div class="mx-auto w-full sm:w-sm md:w-md lg:w-lg px-5 md:px-8 lg:px-16">
           <div
             class="mx-auto mb-10 flex w-full max-w-md flex-col items-center gap-2 text-center md:mb-10 lg:mb-8"
           >
@@ -360,101 +328,39 @@
               Explore our stunning selection of fresh flower bouquets.
             </p>
           </div>
-          <ul
-            class="grid grid-cols-1 gap-6 md:grid-cols-2 sm:gap-8 lg:grid-cols-4"
+
+          <p
+            data-products-loader
+            class="hidden py-10 text-center text-base leading-normal"
+            aria-live="polite"
           >
-            <li>
-              <flora-product-card
-                variant="compact"
-                name="Peach Meadow"
-                description="A soft and radiant arrangement of peach and blush roses with lush greenery in a straw basket - light and natural."
-                price="$55"
-                src="./images/bouquet-1.jpg"
-                alt="Peach Meadow"
-                width="296"
-              ></flora-product-card>
-            </li>
-            <li>
-              <flora-product-card
-                variant="compact"
-                name="Blush Romance"
-                description="A premium bouquet of deep pink and ivory roses, complemented by silver eucalyptus - sophisticated and intimate."
-                price="$34"
-                src="./images/bouquet-2.jpg"
-                alt="Blush Romance"
-                width="296"
-              ></flora-product-card>
-            </li>
-            <li>
-              <flora-product-card
-                variant="compact"
-                name="Pastel Garden"
-                description="A pastel-toned mix of spray roses and greenery in a woven basket - gentle, airy, and perfect for any occasion."
-                price="$40"
-                src="./images/bouquet-3.jpg"
-                alt="Pastel Garden"
-                width="296"
-              ></flora-product-card>
-            </li>
-            <li>
-              <flora-product-card
-                variant="compact"
-                name="Tulip Charm"
-                description="A vivid bouquet of bright tulips and roses in a lavender box - cheerful and full of charm."
-                price="$61"
-                src="./images/bouquet-4.jpg"
-                alt="Tulip Charm"
-                width="296"
-              ></flora-product-card>
-            </li>
-            <li>
-              <flora-product-card
-                variant="compact"
-                name="Berry Bloom"
-                description="A lush mix of rich pink, purple, and cream blooms with textured greens - romantic and elegant."
-                price="$32"
-                src="./images/bouquet-5.jpg"
-                alt="Berry Bloom"
-                width="296"
-              ></flora-product-card>
-            </li>
-            <li>
-              <flora-product-card
-                variant="compact"
-                name="Sweet Whisper"
-                description="A charming spring bouquet with peonies, roses, and lilac-toned accents - fresh, lively, and expressive."
-                price="$40"
-                src="./images/bouquet-6.jpg"
-                alt="Sweet Whisper"
-                width="296"
-              ></flora-product-card>
-            </li>
-            <li>
-              <flora-product-card
-                variant="compact"
-                name="Field Joy"
-                description="A rustic hand-tied bouquet of sunflowers, lisianthus, and daisies - perfect for brightening the day."
-                price="$49"
-                src="./images/bouquet-7.jpg"
-                alt="Field Joy"
-                width="296"
-              ></flora-product-card>
-            </li>
-            <li>
-              <flora-product-card
-                variant="compact"
-                name="Soft Bloom"
-                description="A delicate bouquet of pink carnations and roses wrapped in satin paper - soft, stylish, and versatile."
-                price="$37"
-                src="./images/bouquet-8.jpg"
-                alt="Soft Bloom"
-                width="296"
-              ></flora-product-card>
-            </li>
-          </ul>
-          <div class="mt-10 flex justify-center">
+            Loading...
+          </p>
+
+          <p
+            data-products-error
+            class="hidden py-10 text-center text-base leading-normal"
+            role="alert"
+            aria-live="assertive"
+          ></p>
+
+          <ul
+            data-products-list
+            class="grid grid-cols-1 gap-6 md:grid-cols-2 sm:gap-8 lg:grid-cols-4"
+          ></ul>
+
+          <p
+            data-products-end
+            class="hidden mt-10 text-center text-base leading-normal"
+            aria-live="polite"
+          >
+            We're sorry, but you've reached the end of search results.
+          </p>
+
+          <div data-products-actions class="mt-10 hidden flex justify-center">
             <button
               type="button"
+              data-products-show-more
               class="mx-auto inline-flex w-full max-w-[340px] cursor-pointer items-center justify-center rounded-full border-0 bg-primary-gradient px-6 py-2.5 text-base font-medium text-foreground no-underline transition-opacity hover:opacity-50 focus:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-barberry md:max-w-[340px] lg:max-w-[406px]"
             >
               Show More
@@ -463,13 +369,8 @@
         </div>
       </section>
 
-      <section
-        id="testimonials"
-        class="bg-surface py-16 md:py-16 lg:py-section-lg"
-      >
-        <div
-          class="mx-auto w-full sm:w-sm md:w-md lg:w-lg px-5 md:px-8 lg:px-16"
-        >
+      <section id="testimonials" class="bg-surface py-16 md:py-16 lg:py-section-lg">
+        <div class="mx-auto w-full sm:w-sm md:w-md lg:w-lg px-5 md:px-8 lg:px-16">
           <h2
             class="mb-6 text-center font-serif text-[2.125rem] font-normal leading-[1.2] tracking-[-0.34px] md:mb-8 md:text-[2.125rem] md:tracking-[-0.34px] lg:text-[3rem] lg:tracking-[-0.48px]"
           >
@@ -531,10 +432,7 @@
                 </li>
               </ul>
             </div>
-            <div
-              class="mt-8 flex w-full justify-end"
-              aria-label="Testimonials carousel"
-            >
+            <div class="mt-8 flex w-full justify-end" aria-label="Testimonials carousel">
               <div class="flex gap-4">
                 <button
                   type="button"
@@ -563,12 +461,8 @@
       </section>
 
       <section id="contact" class="bg-surface py-16 md:py-16 lg:py-section-lg">
-        <div
-          class="mx-auto w-full sm:w-sm md:w-md lg:w-lg px-5 md:px-8 lg:px-16"
-        >
-          <div
-            class="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 lg:gap-20"
-          >
+        <div class="mx-auto w-full sm:w-sm md:w-md lg:w-lg px-5 md:px-8 lg:px-16">
+          <div class="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 lg:gap-20">
             <div class="flex flex-col gap-4">
               <p class="m-0 text-base font-semibold leading-normal">Connect</p>
               <h2
@@ -577,24 +471,16 @@
                 Get in Touch
               </h2>
               <p class="m-0 text-lg leading-normal">
-                We're here to assist you with all your floral needs and
-                inquiries.
+                We're here to assist you with all your floral needs and inquiries.
               </p>
             </div>
             <div class="flex flex-col gap-6 pt-2">
               <div class="flex items-start gap-4">
-                <svg
-                  width="24"
-                  height="24"
-                  aria-hidden="true"
-                  class="size-6 shrink-0"
-                >
+                <svg width="24" height="24" aria-hidden="true" class="size-6 shrink-0">
                   <use href="./assets/icons.svg#phone"></use>
                 </svg>
                 <div class="flex flex-col gap-2">
-                  <p
-                    class="m-0 font-serif text-lg leading-[1.4] tracking-[-0.18px]"
-                  >
+                  <p class="m-0 font-serif text-lg leading-[1.4] tracking-[-0.18px]">
                     Phone
                   </p>
                   <a
@@ -605,18 +491,11 @@
                 </div>
               </div>
               <div class="flex items-start gap-4">
-                <svg
-                  width="24"
-                  height="24"
-                  aria-hidden="true"
-                  class="size-6 shrink-0"
-                >
+                <svg width="24" height="24" aria-hidden="true" class="size-6 shrink-0">
                   <use href="./assets/icons.svg#map"></use>
                 </svg>
                 <div class="flex flex-col gap-2">
-                  <p
-                    class="m-0 font-serif text-lg leading-[1.4] tracking-[-0.18px]"
-                  >
+                  <p class="m-0 font-serif text-lg leading-[1.4] tracking-[-0.18px]">
                     Store
                   </p>
                   <p class="m-0 text-base leading-normal">
@@ -627,8 +506,8 @@
             </div>
           </div>
           <img
-            src="./images/shop.jpg"
-            srcset="./images/shop.jpg 1x, ./images/shop.jpg 2x"
+            src="./images/shop@1x.jpg"
+            srcset="./images/shop@2x.jpg 2x"
             sizes="100vw"
             alt="Florist holding bouquet in flower shop"
             width="1280"
@@ -666,11 +545,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg
-                  role="img"
-                  aria-label="Facebook"
-                  class="block size-10 md:size-6"
-                >
+                <svg role="img" aria-label="Facebook" class="block size-10 md:size-6">
                   <use href="./assets/icons.svg#facebook"></use>
                 </svg>
               </a>
@@ -681,11 +556,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg
-                  role="img"
-                  aria-label="Instagram"
-                  class="block size-10 md:size-6"
-                >
+                <svg role="img" aria-label="Instagram" class="block size-10 md:size-6">
                   <use href="./assets/icons.svg#instagram"></use>
                 </svg>
               </a>
@@ -704,14 +575,177 @@
       </div>
     </footer>
 
+    <flora-product-modal
+      id="product-modal"
+      class="fixed inset-0 z-60 flex items-center justify-center overflow-y-auto bg-black/25 px-5 py-16 opacity-0 pointer-events-none transition-opacity duration-300 ease-out data-open:pointer-events-auto data-open:opacity-100 md:px-20 md:py-16"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="product-modal-title"
+    >
+      <div
+        data-role="panel"
+        class="w-full relative max-w-[1280px] rounded-2xl bg-surface px-5 py-14 md:px-16 md:py-16"
+      >
+        <button
+          type="button"
+          data-modal-close
+          class="absolute right-4 top-4 z-10 inline-flex size-8 cursor-pointer items-center justify-center text-foreground"
+          aria-label="Close product details"
+        >
+          <svg width="32" height="32" aria-hidden="true">
+            <use href="./assets/icons.svg#x"></use>
+          </svg>
+        </button>
+        <div class="flex flex-col gap-6 md:flex-row md:items-center md:gap-20">
+          <div class="min-w-0 flex-1">
+            <img
+              data-role="image"
+              src=""
+              srcset=""
+              sizes="(min-width: 768px) 600px, 100vw"
+              width="600"
+              height="640"
+              decoding="async"
+              class="aspect-600/640 h-auto w-full rounded-2xl object-cover"
+              alt=""
+            />
+          </div>
+          <div class="flex min-w-0 flex-1 flex-col gap-6">
+            <h2
+              id="product-modal-title"
+              data-role="title"
+              class="font-serif text-[2rem] font-normal leading-[1.2] tracking-[-0.32px]"
+            ></h2>
+            <div class="flex items-stretch gap-4 self-start">
+              <p
+                data-role="price"
+                class="font-serif text-xl font-normal leading-[1.4] tracking-[-0.2px]"
+              ></p>
+              <span class="w-px shrink-0 bg-border-subtle" aria-hidden="true"></span>
+            </div>
+            <p data-role="description" class="text-sm leading-[1.5]"></p>
+            <div class="flex w-full gap-4 pt-2">
+              <button
+                type="button"
+                data-role="buy"
+                class="inline-flex min-w-0 flex-1 cursor-pointer items-center justify-center rounded-full border-0 bg-primary-gradient px-6 py-2.5 text-base font-medium leading-normal text-foreground transition-opacity hover:opacity-50 focus:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-barberry"
+              >
+                Buy now
+              </button>
+              <label class="sr-only" for="product-modal-quantity">Quantity</label>
+              <input
+                id="product-modal-quantity"
+                data-role="quantity"
+                type="number"
+                min="1"
+                value="1"
+                inputmode="numeric"
+                class="w-16 shrink-0 rounded-xl border border-border-subtle bg-surface px-3 py-2 text-center text-base leading-normal text-foreground"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </flora-product-modal>
+
+    <flora-order-modal
+      id="order-modal"
+      class="fixed inset-0 z-60 flex items-center justify-center overflow-y-auto bg-black/25 px-5 py-16 opacity-0 pointer-events-none transition-opacity duration-300 ease-out data-open:pointer-events-auto data-open:opacity-100 md:px-20 md:py-16"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="order-modal-title"
+    >
+      <button
+        type="button"
+        data-modal-close
+        class="absolute right-5 top-20 z-10 inline-flex size-8 cursor-pointer items-center justify-center text-foreground md:right-20"
+        aria-label="Close order form"
+      >
+        <svg width="32" height="32" aria-hidden="true">
+          <use href="./assets/icons.svg#x"></use>
+        </svg>
+      </button>
+
+      <div
+        data-role="panel"
+        class="w-full max-w-[842px] rounded-2xl bg-surface px-5 py-14 md:p-16"
+      >
+        <div class="flex flex-col items-center gap-12">
+          <h2
+            id="order-modal-title"
+            class="w-full text-center font-serif text-[2.125rem] font-normal leading-[1.2] tracking-[-0.34px]"
+          >
+            Order
+          </h2>
+
+          <form data-role="form" class="flex w-full flex-col gap-6">
+            <div class="flex flex-col gap-2">
+              <label for="order-name" class="text-base leading-normal">Name*</label>
+              <input
+                id="order-name"
+                name="name"
+                type="text"
+                required
+                autocomplete="name"
+                placeholder="Ann"
+                class="w-full rounded-xl border border-border-subtle bg-surface px-3 py-2 text-base leading-normal text-foreground placeholder:text-foreground/60"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <label for="order-phone" class="text-base leading-normal">Phone*</label>
+              <input
+                id="order-phone"
+                name="phone"
+                type="tel"
+                required
+                autocomplete="tel"
+                placeholder="+1 (555) 123-4567"
+                class="w-full rounded-xl border border-border-subtle bg-surface px-3 py-2 text-base leading-normal text-foreground placeholder:text-foreground/60"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <label for="order-address" class="text-base leading-normal">Adress</label>
+              <input
+                id="order-address"
+                name="address"
+                type="text"
+                autocomplete="street-address"
+                placeholder="456 Floral Ave, Sydney NSW 2000 AU"
+                class="w-full rounded-xl border border-border-subtle bg-surface px-3 py-2 text-base leading-normal text-foreground placeholder:text-foreground/60"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <label for="order-message" class="text-base leading-normal">Message</label>
+              <textarea
+                id="order-message"
+                name="message"
+                rows="6"
+                placeholder="Type your message..."
+                class="h-[180px] w-full resize-none rounded-xl border border-border-subtle bg-surface p-3 text-base leading-normal text-foreground placeholder:text-foreground/60"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="inline-flex cursor-pointer items-center justify-center self-center rounded-full border-0 bg-primary-gradient px-6 py-2.5 text-base font-medium leading-normal text-foreground transition-opacity hover:opacity-50 focus:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-barberry"
+            >
+              Go to Checkout
+            </button>
+          </form>
+        </div>
+      </div>
+    </flora-order-modal>
+
     <template id="flora-product-card-template">
       <div class="flex min-w-0 flex-col gap-4">
         <img data-role="image" loading="lazy" />
         <div data-role="body">
-          <h3
-            data-role="title"
-            class="text-lg font-semibold leading-normal"
-          ></h3>
+          <h3 data-role="title" class="text-lg font-semibold leading-normal"></h3>
           <p data-role="description" class="text-sm leading-normal"></p>
           <p data-role="price" class="text-xl font-semibold leading-normal"></p>
         </div>

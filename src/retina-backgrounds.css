@@ -1,0 +1,13 @@
+/* Ретинізовані фонові растрові зображення */
+
+.hero {
+  background-image: url('../images/hero-image@1x.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('../images/hero-image@2x.jpg');
+  }
+}
