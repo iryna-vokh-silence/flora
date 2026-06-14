@@ -10,10 +10,13 @@ class MobileMenu extends HTMLElement {
     const toggleMenu = (isOpen) => {
       if (isOpen) {
         this.setAttribute('data-open', '');
+        this.removeAttribute('inert');
+        closeButton.focus();
       } else {
         this.removeAttribute('data-open');
+        this.setAttribute('inert', '');
+        openButton.focus();
       }
-      this.setAttribute('aria-hidden', String(!isOpen));
       openButton.setAttribute('aria-expanded', String(isOpen));
       document.body.classList.toggle('overflow-hidden', isOpen);
     };
