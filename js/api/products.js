@@ -1,28 +1,46 @@
-import axios from '../../node_modules/axios/dist/esm/axios.js';
+import axios from 'axios';
 
-const API_BASE = 'http://localhost:3001';
+const IS_STATIC = import.meta.env.VITE_API_MODE === 'static';
+const API_BASE = IS_STATIC
+  ? `${import.meta.env.BASE_URL}api`
+  : 'http://localhost:3001';
+
 export const PRODUCTS_PAGE_SIZE = 8;
+
+let _cache = null;
+
+async function getAllProducts() {
+  if (_cache) return _cache;
+  const { data } = await axios.get(`${API_BASE}/products.json`);
+  _cache = data;
+  return _cache;
+}
 
 /**
  * @param {number} page
  * @returns {Promise<{ products: Array, total: number }>}
  */
 export async function fetchProducts(page) {
-  try {
-    const response = await axios.get(`${API_BASE}/products`, {
-      params: {
-        _page: page,
-        _limit: PRODUCTS_PAGE_SIZE,
-      },
-    });
-
-    const total = Number(response.headers['x-total-count'] ?? response.data.length);
-
+  if (IS_STATIC) {
+    const all = await getAllProducts();
+    const start = (page - 1) * PRODUCTS_PAGE_SIZE;
     return {
-      products: response.data,
-      total,
+      products: all.slice(start, start + PRODUCTS_PAGE_SIZE),
+      total: all.length,
     };
-  } catch (error) {
-    throw error;
   }
+
+  const response = await axios.get(`${API_BASE}/products`, {
+    params: {
+      _page: page,
+      _limit: PRODUCTS_PAGE_SIZE,
+    },
+  });
+
+  const total = Number(response.headers['x-total-count'] ?? response.data.length);
+
+  return {
+    products: response.data,
+    total,
+  };
 }
