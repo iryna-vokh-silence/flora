@@ -26,8 +26,6 @@ jobs:
       - run: npm ci
 
       - name: Build
-        env:
-          VITE_API_MODE: static
         run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
