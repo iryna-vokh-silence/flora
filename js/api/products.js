@@ -3,7 +3,7 @@ import axios from 'axios';
 const IS_STATIC = import.meta.env.VITE_API_MODE === 'static';
 const API_BASE = IS_STATIC
   ? `${import.meta.env.BASE_URL}api`
-  : 'http://localhost:3001';
+  : 'https://flora-backend-sii6.onrender.com/api';
 
 export const PRODUCTS_PAGE_SIZE = 8;
 
@@ -11,7 +11,7 @@ let _cache = null;
 
 async function getAllProducts() {
   if (_cache) return _cache;
-  const { data } = await axios.get(`${API_BASE}/products.json`);
+  const { data } = await axios.get(`${API_BASE}/bouquets.json`);
   _cache = data;
   return _cache;
 }
@@ -30,17 +30,17 @@ export async function fetchProducts(page) {
     };
   }
 
-  const response = await axios.get(`${API_BASE}/products`, {
+  const response = await axios.get(`${API_BASE}/bouquets`, {
     params: {
       _page: page,
       _limit: PRODUCTS_PAGE_SIZE,
     },
   });
 
-  const total = Number(response.headers['x-total-count'] ?? response.data.length);
+  const total = Number(response.headers['x-total-count'] ?? response.data.total);
 
   return {
-    products: response.data,
+    products: response.data.bouquets,
     total,
   };
 }

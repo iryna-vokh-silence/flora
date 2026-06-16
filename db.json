@@ -1,244 +1,244 @@
 {
-  "products": [
+  "bouquets": [
     {
       "id": 1,
-      "name": "Peach Meadow",
+      "title": "Peach Meadow",
       "description": "A soft and radiant arrangement of peach and blush roses with lush greenery in a straw basket - light and natural.",
       "price": "$55",
-      "src": "./images/bouquet-1@1x.jpg",
-      "alt": "Peach Meadow"
+      "photoURL": "./images/bouquet-1@1x.jpg",
+      "favorite": false
     },
     {
       "id": 2,
-      "name": "Blush Romance",
+      "title": "Blush Romance",
       "description": "A premium bouquet of deep pink and ivory roses, complemented by silver eucalyptus - sophisticated and intimate.",
       "price": "$34",
-      "src": "./images/bouquet-2@1x.jpg",
-      "alt": "Blush Romance"
+      "photoURL": "./images/bouquet-2@1x.jpg",
+      "favorite": false
     },
     {
       "id": 3,
-      "name": "Pastel Garden",
+      "title": "Pastel Garden",
       "description": "A pastel-toned mix of spray roses and greenery in a woven basket - gentle, airy, and perfect for any occasion.",
       "price": "$40",
-      "src": "./images/bouquet-3@1x.jpg",
-      "alt": "Pastel Garden"
+      "photoURL": "./images/bouquet-3@1x.jpg",
+      "favorite": false
     },
     {
       "id": 4,
-      "name": "Tulip Charm",
+      "title": "Tulip Charm",
       "description": "A vivid bouquet of bright tulips and roses in a lavender box - cheerful and full of charm.",
       "price": "$61",
-      "src": "./images/bouquet-4@1x.jpg",
-      "alt": "Tulip Charm"
+      "photoURL": "./images/bouquet-4@1x.jpg",
+      "favorite": false
     },
     {
       "id": 5,
-      "name": "Berry Bloom",
+      "title": "Berry Bloom",
       "description": "A lush mix of rich pink, purple, and cream blooms with textured greens - romantic and elegant.",
       "price": "$32",
-      "src": "./images/bouquet-5@1x.jpg",
-      "alt": "Berry Bloom"
+      "photoURL": "./images/bouquet-5@1x.jpg",
+      "favorite": false
     },
     {
       "id": 6,
-      "name": "Sweet Whisper",
+      "title": "Sweet Whisper",
       "description": "A charming spring bouquet with peonies, roses, and lilac-toned accents - fresh, lively, and expressive.",
       "price": "$40",
-      "src": "./images/bouquet-6@1x.jpg",
-      "alt": "Sweet Whisper"
+      "photoURL": "./images/bouquet-6@1x.jpg",
+      "favorite": false
     },
     {
       "id": 7,
-      "name": "Field Joy",
+      "title": "Field Joy",
       "description": "A rustic hand-tied bouquet of sunflowers, lisianthus, and daisies - perfect for brightening the day.",
       "price": "$49",
-      "src": "./images/bouquet-7@1x.jpg",
-      "alt": "Field Joy"
+      "photoURL": "./images/bouquet-7@1x.jpg",
+      "favorite": false
     },
     {
       "id": 8,
-      "name": "Soft Bloom",
+      "title": "Soft Bloom",
       "description": "A delicate bouquet of pink carnations and roses wrapped in satin paper - soft, stylish, and versatile.",
       "price": "$37",
-      "src": "./images/bouquet-8@1x.jpg",
-      "alt": "Soft Bloom"
+      "photoURL": "./images/bouquet-8@1x.jpg",
+      "favorite": false
     },
     {
       "id": 9,
-      "name": "Spring Elegance",
+      "title": "Spring Elegance",
       "description": "A delicate blend of peonies, tulips, and roses - perfect for springtime gifting and bright smiles.",
       "price": "$35",
-      "src": "./images/bouquet-9@1x.jpg",
-      "alt": "Spring Elegance"
+      "photoURL": "./images/bouquet-9@1x.jpg",
+      "favorite": false
     },
     {
       "id": 10,
-      "name": "Berry Chic",
+      "title": "Berry Chic",
       "description": "A stylish composition of roses, seasonal greenery, and vibrant berries - a bold and elegant floral statement.",
       "price": "$40",
-      "src": "./images/bouquet-10@1x.jpg",
-      "alt": "Berry Chic"
+      "photoURL": "./images/bouquet-10@1x.jpg",
+      "favorite": false
     },
     {
       "id": 11,
-      "name": "Lavender Dream",
+      "title": "Lavender Dream",
       "description": "A rich bouquet with lavender, lisianthus, and roses - ideal for those who love deep hues and gentle fragrance.",
       "price": "$55",
-      "src": "./images/bouquet-11@1x.jpg",
-      "alt": "Lavender Dream"
+      "photoURL": "./images/bouquet-11@1x.jpg",
+      "favorite": false
     },
     {
       "id": 12,
-      "name": "Coral Sunset",
+      "title": "Coral Sunset",
       "description": "Warm coral roses paired with soft eucalyptus create a radiant, sunset-inspired arrangement.",
       "price": "$48",
-      "src": "./images/bouquet-1@1x.jpg",
-      "alt": "Coral Sunset"
+      "photoURL": "./images/bouquet-1@1x.jpg",
+      "favorite": false
     },
     {
       "id": 13,
-      "name": "Midnight Bloom",
+      "title": "Midnight Bloom",
       "description": "Deep burgundy roses and dark greenery for a dramatic, sophisticated statement.",
       "price": "$52",
-      "src": "./images/bouquet-2@1x.jpg",
-      "alt": "Midnight Bloom"
+      "photoURL": "./images/bouquet-2@1x.jpg",
+      "favorite": false
     },
     {
       "id": 14,
-      "name": "Garden Party",
+      "title": "Garden Party",
       "description": "A cheerful mix of seasonal blooms perfect for celebrations and gatherings.",
       "price": "$44",
-      "src": "./images/bouquet-3@1x.jpg",
-      "alt": "Garden Party"
+      "photoURL": "./images/bouquet-3@1x.jpg",
+      "favorite": false
     },
     {
       "id": 15,
-      "name": "Sunny Delight",
+      "title": "Sunny Delight",
       "description": "Bright yellow and white flowers that bring instant joy to any room.",
       "price": "$39",
-      "src": "./images/bouquet-4@1x.jpg",
-      "alt": "Sunny Delight"
+      "photoURL": "./images/bouquet-4@1x.jpg",
+      "favorite": false
     },
     {
       "id": 16,
-      "name": "Violet Mist",
+      "title": "Violet Mist",
       "description": "Soft purple tones with delicate filler flowers for a dreamy, romantic feel.",
       "price": "$46",
-      "src": "./images/bouquet-5@1x.jpg",
-      "alt": "Violet Mist"
+      "photoURL": "./images/bouquet-5@1x.jpg",
+      "favorite": false
     },
     {
       "id": 17,
-      "name": "Autumn Glow",
+      "title": "Autumn Glow",
       "description": "Rich orange and red tones capture the warmth of fall in every petal.",
       "price": "$50",
-      "src": "./images/bouquet-6@1x.jpg",
-      "alt": "Autumn Glow"
+      "photoURL": "./images/bouquet-6@1x.jpg",
+      "favorite": false
     },
     {
       "id": 18,
-      "name": "Summer Breeze",
+      "title": "Summer Breeze",
       "description": "Light, airy stems in pastel hues - like a breath of fresh summer air.",
       "price": "$42",
-      "src": "./images/bouquet-7@1x.jpg",
-      "alt": "Summer Breeze"
+      "photoURL": "./images/bouquet-7@1x.jpg",
+      "favorite": false
     },
     {
       "id": 19,
-      "name": "Pink Cloud",
+      "title": "Pink Cloud",
       "description": "Fluffy pink blooms arranged in a cloud-like, soft and feminine design.",
       "price": "$38",
-      "src": "./images/bouquet-8@1x.jpg",
-      "alt": "Pink Cloud"
+      "photoURL": "./images/bouquet-8@1x.jpg",
+      "favorite": false
     },
     {
       "id": 20,
-      "name": "Royal Peony",
+      "title": "Royal Peony",
       "description": "Luxurious peonies and garden roses for an opulent, regal presentation.",
       "price": "$62",
-      "src": "./images/bouquet-9@1x.jpg",
-      "alt": "Royal Peony"
+      "photoURL": "./images/bouquet-9@1x.jpg",
+      "favorite": false
     },
     {
       "id": 21,
-      "name": "Wild Meadow",
+      "title": "Wild Meadow",
       "description": "A natural, hand-gathered style with wildflowers and textured greens.",
       "price": "$36",
-      "src": "./images/bouquet-10@1x.jpg",
-      "alt": "Wild Meadow"
+      "photoURL": "./images/bouquet-10@1x.jpg",
+      "favorite": false
     },
     {
       "id": 22,
-      "name": "Crystal Frost",
+      "title": "Crystal Frost",
       "description": "White and silver-toned blooms for elegant, winter-inspired gifting.",
       "price": "$58",
-      "src": "./images/bouquet-11@1x.jpg",
-      "alt": "Crystal Frost"
+      "photoURL": "./images/bouquet-11@1x.jpg",
+      "favorite": false
     },
     {
       "id": 23,
-      "name": "Honey Glow",
+      "title": "Honey Glow",
       "description": "Golden tones and amber roses wrapped in warm, inviting hues.",
       "price": "$45",
-      "src": "./images/bouquet-1@1x.jpg",
-      "alt": "Honey Glow"
+      "photoURL": "./images/bouquet-1@1x.jpg",
+      "favorite": false
     },
     {
       "id": 24,
-      "name": "Ocean Mist",
+      "title": "Ocean Mist",
       "description": "Cool blue and white flowers reminiscent of a calm seaside morning.",
       "price": "$41",
-      "src": "./images/bouquet-2@1x.jpg",
-      "alt": "Ocean Mist"
+      "photoURL": "./images/bouquet-2@1x.jpg",
+      "favorite": false
     },
     {
       "id": 25,
-      "name": "Cherry Blossom",
+      "title": "Cherry Blossom",
       "description": "Soft pink blossoms with delicate branches for a Japanese-inspired bouquet.",
       "price": "$53",
-      "src": "./images/bouquet-3@1x.jpg",
-      "alt": "Cherry Blossom"
+      "photoURL": "./images/bouquet-3@1x.jpg",
+      "favorite": false
     },
     {
       "id": 26,
-      "name": "Forest Fern",
+      "title": "Forest Fern",
       "description": "Earthy greens and woodland blooms for a rustic, natural aesthetic.",
       "price": "$47",
-      "src": "./images/bouquet-4@1x.jpg",
-      "alt": "Forest Fern"
+      "photoURL": "./images/bouquet-4@1x.jpg",
+      "favorite": false
     },
     {
       "id": 27,
-      "name": "Citrus Pop",
+      "title": "Citrus Pop",
       "description": "Vibrant orange and green stems for a bold, energetic arrangement.",
       "price": "$43",
-      "src": "./images/bouquet-5@1x.jpg",
-      "alt": "Citrus Pop"
+      "photoURL": "./images/bouquet-5@1x.jpg",
+      "favorite": false
     },
     {
       "id": 28,
-      "name": "Moonlight",
+      "title": "Moonlight",
       "description": "Pale ivory and cream flowers for understated, timeless elegance.",
       "price": "$56",
-      "src": "./images/bouquet-6@1x.jpg",
-      "alt": "Moonlight"
+      "photoURL": "./images/bouquet-6@1x.jpg",
+      "favorite": false
     },
     {
       "id": 29,
-      "name": "Firelight",
+      "title": "Firelight",
       "description": "Red and orange blooms that glow with passionate, fiery energy.",
       "price": "$49",
-      "src": "./images/bouquet-7@1x.jpg",
-      "alt": "Firelight"
+      "photoURL": "./images/bouquet-7@1x.jpg",
+      "favorite": false
     },
     {
       "id": 30,
-      "name": "Silk Ribbon",
+      "title": "Silk Ribbon",
       "description": "Soft roses tied with satin ribbon - refined, classic, and gift-ready.",
       "price": "$54",
-      "src": "./images/bouquet-8@1x.jpg",
-      "alt": "Silk Ribbon"
+      "photoURL": "./images/bouquet-8@1x.jpg",
+      "favorite": false
     }
   ],
   "gallery": [

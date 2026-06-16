@@ -9,11 +9,11 @@ function createProductItem(product) {
   const card = document.createElement("flora-product-card");
 
   card.setAttribute("variant", "compact");
-  card.setAttribute("name", product.name ?? "");
+  card.setAttribute("name", product.title ?? "");
   card.setAttribute("description", product.description ?? "");
   card.setAttribute("price", product.price ?? "");
-  card.setAttribute("src", product.src ?? "");
-  card.setAttribute("alt", product.alt ?? product.name ?? "");
+  card.setAttribute("src", product.photoURL ?? "");
+  card.setAttribute("alt", product.title ?? "");
   card.setAttribute("width", "296");
 
   li.append(card);
