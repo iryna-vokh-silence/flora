@@ -6,7 +6,5 @@ import './components/order-modal.js';
 import './components/testimonial-card.js';
 import './components/section-carousel.js';
 import { initProducts } from './products.js';
-import { initReviews } from './reviews.js';
 
 initProducts();
-initReviews();

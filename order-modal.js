@@ -1,5 +1,3 @@
-import { submitOrder } from '../api/orders.js';
-
 class FloraOrderModal extends HTMLElement {
   #nodes = null;
   #onOrderOpen = null;
@@ -33,32 +31,9 @@ class FloraOrderModal extends HTMLElement {
     this.addEventListener("click", this.#onOverlayClick);
     this.#nodes.panel.addEventListener("click", this.#onPanelClick);
     this.#nodes.closeBtn.addEventListener("click", () => this.close());
-    this.#nodes.form.addEventListener("submit", async (event) => {
+    this.#nodes.form.addEventListener("submit", (event) => {
       event.preventDefault();
-
-      const formData = new FormData(this.#nodes.form);
-      const data = {
-        name: formData.get('name') ?? '',
-        phone: formData.get('phone') ?? '',
-        address: formData.get('address') ?? '',
-        message: formData.get('message') ?? '',
-      };
-
-      const submitBtn = this.#nodes.form.querySelector('[type="submit"]');
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Sending...';
-      }
-
-      try {
-        await submitOrder(data);
-        this.close();
-      } catch {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Order';
-        }
-      }
+      this.close();
     });
   }
 
