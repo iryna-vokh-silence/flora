@@ -2,3 +2,14 @@
 
 node_modules
 dist
+
+# Vite dev cache (root-level duplicates)
+/main.js
+/mobile-menu.js
+/order-modal.js
+/product-card.js
+/product-modal.js
+/products-api.js
+/products.js
+/input.css
+/retina-backgrounds.css
